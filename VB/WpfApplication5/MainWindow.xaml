@@ -1,0 +1,15 @@
+﻿<Window x:Class="WpfApplication5.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        Title="MainWindow" Height="350" Width="525" xmlns:dxe="http://schemas.devexpress.com/winfx/2008/xaml/editors" xmlns:my="clr-namespace:WpfApplication5">
+    <Grid>
+        <my:MyComboBox HorizontalAlignment="Left" Margin="182,92,0,0" x:Name="comboBoxEdit1" PopupClosing="comboBoxEdit1_PopupClosing" EditValueChanged="comboBoxEdit1_EditValueChanged" VerticalAlignment="Top" Width="150">
+            <dxe:ComboBoxEdit.Items>
+                <dxe:ComboBoxEditItem>Item 1</dxe:ComboBoxEditItem>
+                <dxe:ComboBoxEditItem>Item 2</dxe:ComboBoxEditItem>
+                <dxe:ComboBoxEditItem>Item 3</dxe:ComboBoxEditItem>
+            </dxe:ComboBoxEdit.Items>
+        </my:MyComboBox>
+        <dxe:TextEdit HorizontalAlignment="Left" Margin="182,144,0,0" Name="textEdit1" VerticalAlignment="Top" Width="150" />
+    </Grid>
+</Window>
